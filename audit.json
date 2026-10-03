@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-10-03T12:25:05.599Z",
+  "threshold": 90,
+  "pages": [
+    {
+      "url": "https://remoteok.com/",
+      "fetchVia": "Node fetch",
+      "blockCount": 2,
+      "blocks": [
+        {
+          "index": 1,
+          "status": "valid"
+        },
+        {
+          "index": 2,
+          "status": "valid"
+        }
+      ],
+      "schemas": [
+        {
+          "type": "Organization",
+          "name": "Remote OK",
+          "score": 100,
+          "missing": [],
+          "block": 1
+        },
+        {
+          "type": "Product",
+          "name": "Remote OK",
+          "score": 33,
+          "missing": [
+            "image|description",
+            "offers"
+          ],
+          "block": 2
+        }
+      ],
+      "score": 67,
+      "error": null
+    },
+    {
+      "url": "https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking",
+      "fetchVia": "curl fallback",
+      "blockCount": 1,
+      "blocks": [
+        {
+          "index": 1,
+          "status": "invalid-JSON (recovered by sanitization)"
+        }
+      ],
+      "schemas": [
+        {
+          "type": "JobPosting",
+          "name": "Account Manager - Dutch speaking",
+          "score": 83,
+          "missing": [
+            "jobLocation"
+          ],
+          "block": 1
+        },
+        {
+          "type": "Organization",
+          "name": "Algolia",
+          "score": 33,
+          "missing": [
+            "url",
+            "logo"
+          ],
+          "block": 1
+        }
+      ],
+      "score": 58,
+      "error": null
+    },
+    {
+      "url": "file:fixtures/broken-jobposting.html",
+      "fetchVia": "local file",
+      "blockCount": 1,
+      "blocks": [
+        {
+          "index": 1,
+          "status": "valid"
+        }
+      ],
+      "schemas": [
+        {
+          "type": "JobPosting",
+          "name": "Fixture\u0001 Engineer",
+          "score": 100,
+          "missing": [],
+          "block": 1
+        },
+        {
+          "type": "Organization",
+          "name": "Example Co",
+          "score": 33,
+          "missing": [
+            "url",
+            "logo"
+          ],
+          "block": 1
+        }
+      ],
+      "score": 67,
+      "error": null
+    }
+  ]
+}

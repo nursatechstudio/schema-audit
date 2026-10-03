@@ -1,0 +1,9 @@
+# Schema Audit example targets — one URL per line, "#" starts a comment.
+# Verify a page exposes application/ld+json before adding it (see README).
+
+# Organization schema on the RemoteOK home page
+https://remoteok.com/
+# JobPosting with technically-invalid JSON-LD (control characters inside strings)
+https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking
+# Local broken fixture that proves the sanitization recovery path
+file:fixtures/broken-jobposting.html
