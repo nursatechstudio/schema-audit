@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T12:25:05.599Z",
-  "threshold": 90,
+  "generatedAt": "2026-10-03T12:59:10.263Z",
+  "threshold": 70,
   "pages": [
     {
       "url": "https://remoteok.com/",
@@ -40,37 +40,12 @@
     },
     {
       "url": "https://weworkremotely.com/remote-jobs/algolia-account-manager-dutch-speaking",
-      "fetchVia": "curl fallback",
-      "blockCount": 1,
-      "blocks": [
-        {
-          "index": 1,
-          "status": "invalid-JSON (recovered by sanitization)"
-        }
-      ],
-      "schemas": [
-        {
-          "type": "JobPosting",
-          "name": "Account Manager - Dutch speaking",
-          "score": 83,
-          "missing": [
-            "jobLocation"
-          ],
-          "block": 1
-        },
-        {
-          "type": "Organization",
-          "name": "Algolia",
-          "score": 33,
-          "missing": [
-            "url",
-            "logo"
-          ],
-          "block": 1
-        }
-      ],
-      "score": 58,
-      "error": null
+      "fetchVia": null,
+      "blockCount": 0,
+      "blocks": [],
+      "schemas": [],
+      "score": 0,
+      "error": "Node fetch failed (HTTP 403); curl failed (curl: (22) The requested URL returned error: 403)"
     },
     {
       "url": "file:fixtures/broken-jobposting.html",
