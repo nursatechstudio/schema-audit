@@ -1,6 +1,6 @@
 # Schema Audit Report
 
-Generated: 2026-10-17T07:29:38.619Z UTC
+Generated: 2026-10-18T07:29:02.614Z UTC
 
 | Page | Score | JSON-LD blocks | Schema objects | Findings |
 |---|---:|---:|---:|---|
